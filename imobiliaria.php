@@ -43,7 +43,7 @@ require "connect.php";
         </header>
 
         <?php
-                        if ($result = $conn->query("SELECT * from casos where area = 'Hospedagem'")) {
+                        if ($result = $conn->query("SELECT * from casos where area = 'Imobiliaria'")) {
     // $result is an object and can be used to fetch row here
 }
 else {
