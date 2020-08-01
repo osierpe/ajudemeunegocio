@@ -1,0 +1,18 @@
+CREATE TABLE casos (
+id INT(6) UNSIGNED AUTO_INCREMENT,
+titulo VARCHAR(512) NOT NULL,
+conteudo TEXT NOT NULL,
+dicas TEXT NOT NULL,
+area VARCHAR(255) NOT NULL,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE comentario (
+id_comment INT(6) UNSIGNED AUTO_INCREMENT,
+id_caso INT(6) UNSIGNED,
+nome VARCHAR(128) NOT NULL,
+conteudo TEXT NOT NULL,
+FOREIGN KEY (id_caso) REFERENCES casos(id),
+PRIMARY KEY (id_comment)
+  
+);
