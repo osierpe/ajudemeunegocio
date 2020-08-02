@@ -1,0 +1,19 @@
+CREATE TABLE casos (
+id INT(6) UNSIGNED AUTO_INCREMENT,
+titulo VARCHAR(512) NOT NULL,
+conteudo TEXT NOT NULL,
+dicas TEXT NOT NULL,
+area VARCHAR(255) NOT NULL,
+carousel TEXT,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE experiencia (
+id INT(6) UNSIGNED AUTO_INCREMENT,
+email VARCHAR(512) ,
+nome VARCHAR(512) ,
+conteudo TEXT ,
+area VARCHAR(255),
+post TINYINT(1) DEFAULT 1,
+PRIMARY KEY (id)
+);
