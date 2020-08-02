@@ -17,3 +17,7 @@ area VARCHAR(255),
 post TINYINT(1) DEFAULT 1,
 PRIMARY KEY (id)
 );
+
+
+Inserção na tabela casos:
+colunas "conteudo", "dicas" e "carousel" são codigos html desenvolvido pelo grupo.
